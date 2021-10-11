@@ -1,0 +1,99 @@
+header,
+section,
+body,
+p,
+h2,
+.section_right ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+header {
+    width: 100%;
+    background: #337ed1;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+header>div {
+    width: 80%;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_right {
+    width: 222px;
+    height: 88px;
+    background: url(image/github-button.png) no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_right>span {
+    margin-left: 65px;
+}
+
+section>div {
+    width: 80%;
+    display: flex;
+}
+
+.section_left {
+    width: 80%;
+}
+
+.section_left>div {
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: #f8e802 0 0 15px;
+    border: #ccc solid 1px;
+    margin: 10px;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+.section_right {
+    width: 200px;
+    border-radius: 20px;
+    box-shadow: #f8e802 0 0 15px;
+    border: #ccc solid 1px;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.section_left ul,
+.section_left a {
+    margin-left: 30px;
+}
+
+.section_right li {
+    padding: 10px 0 10px 20px;
+}
+
+.section_right li:hover {
+    cursor: pointer;
+    background: #ccc;
+}
+
+.section_left h2 {
+    padding: 20px 0 20px 30px;
+    background: #ccc;
+}
