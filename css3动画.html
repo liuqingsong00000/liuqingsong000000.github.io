@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人主页</title>
+    <style>
+        body,
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+        
+        ul {
+            list-style: none;
+        }
+        
+        header ul {
+            margin-left: 200px;
+        }
+        
+        header ul,
+        footer ul {
+            font-size: 85px;
+            font-weight: 700;
+            display: flex;
+        }
+        
+        header li,
+        footer li {
+            margin: 0 10px;
+        }
+        
+        header div {
+            height: 180px;
+            background: url(image/top_back.png) no-repeat;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+        }
+        
+        section div:nth-child(1) {
+            background: #2991f1;
+            font-size: 35px;
+        }
+        
+        section div:nth-child(2) {
+            height: 830px;
+            background: #2991f1;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        
+        marquee {
+            color: white;
+        }
+        
+        .left {
+            width: 300px;
+            height: 600px;
+            background: #1af350;
+            position: absolute;
+            left: -300px;
+            animation: left 1s linear infinite 2s;
+            background: url(image/1.gif) no-repeat;
+            background-size: contain;
+        }
+        
+        .middle,
+        .right {
+            width: 500px;
+            height: 500px;
+        }
+        
+        .middle {
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        .middle li {
+            margin: 10px 0;
+            font-size: 75px;
+        }
+        
+        .right {
+            background: url(image/下载.png) no-repeat;
+            background-size: cover;
+            position: relative;
+            animation: right 3s linear infinite;
+        }
+        
+        footer div {
+            height: 180px;
+            background: #5353e2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        li {
+            position: relative;
+            color: white;
+            text-shadow: black 0 0 35px;
+        }
+        
+        li:nth-child(1) {
+            animation: li 3s linear infinite;
+        }
+        
+        li:nth-child(2) {
+            animation: li 3s linear infinite .3s;
+        }
+        
+        li:nth-child(3) {
+            animation: li 3s linear infinite .6s;
+        }
+        
+        li:nth-child(4) {
+            animation: li 3s linear infinite .9s;
+        }
+        
+        li:nth-child(5) {
+            animation: li 3s linear infinite 1.2s;
+        }
+        
+        li:nth-child(6) {
+            animation: li 3s linear infinite 1.5s;
+        }
+        
+        @keyframes right {
+            0% {
+                transform: rotate(0deg) scale(1);
+            }
+            100% {
+                transform: rotate(360deg) scale(1.1);
+            }
+        }
+        
+        @keyframes li {
+            20% {
+                transform: translate(0, 0);
+            }
+            40% {
+                transform: translate(0, 25px);
+            }
+            60% {
+                transform: translate(0, 0);
+            }
+            80% {
+                transform: translate(0, -25px);
+            }
+            100% {
+                transform: translate(0, 0);
+            }
+        }
+        
+        .middle li:nth-child(1) {
+            animation: middle 3s linear infinite;
+        }
+        
+        .middle li:nth-child(2) {
+            animation: middle 3s linear infinite .2s;
+        }
+        
+        .middle li:nth-child(3) {
+            animation: middle 3s linear infinite .4s;
+        }
+        
+        .middle li:nth-child(4) {
+            animation: middle 3s linear infinite .6s;
+        }
+        
+        @keyframes middle {
+            20% {
+                transform: translate(0, 0);
+            }
+            40% {
+                transform: translate(25px, 0);
+            }
+            60% {
+                transform: translate(0, 0);
+            }
+            80% {
+                transform: translate(-25px, 0);
+            }
+            100% {
+                transform: translate(0, 0);
+            }
+        }
+        
+        .bottom li:nth-child(1) {
+            animation: bottom 3s linear infinite;
+        }
+        
+        .bottom li:nth-child(2) {
+            animation: bottom 3s linear infinite .3s;
+        }
+        
+        .bottom li:nth-child(3) {
+            animation: bottom 3s linear infinite .6s;
+        }
+        
+        .bottom li:nth-child(4) {
+            animation: bottom 3s linear infinite .9s;
+        }
+        
+        @keyframes bottom {
+            20% {
+                transform: translate(0, 0);
+            }
+            40% {
+                transform: translate(0, 25px) scale(1.2);
+            }
+            60% {
+                transform: translate(0, 0);
+            }
+            80% {
+                transform: translate(0, -25px) scale(1.2);
+            }
+            100% {
+                transform: translate(0, 0);
+            }
+        }
+        
+        @keyframes left {
+            100% {
+                transform: rotate(45deg);
+                transform-origin: right bottom;
+            }
+        }
+        
+        .nextpage {
+            height: 50px;
+            font-size: 35px;
+            border-radius: 20px;
+            padding: 20px;
+            background: white;
+            position: absolute;
+            left: -150px;
+            animation: next 3s linear infinite;
+        }
+        
+        @keyframes next {
+            100% {
+                transition: translate(1000px, 0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <!-- 顶部 -->
+        <header>
+            <div>
+                <ul>
+                    <li>刘</li>
+                    <li>青</li>
+                    <li>松</li>
+                    <li>的</li>
+                    <li>主</li>
+                    <li>页</li>
+                </ul>
+            </div>
+        </header>
+        <!-- 主体 -->
+        <section>
+            <div>
+                <marquee behavior="" direction="">嗨！！！</marquee>
+            </div>
+            <div>
+                <div class="left">
+
+                </div>
+                <div class="middle">
+                    <ul>
+                        <li>好</li>
+                        <li>好</li>
+                        <li>学</li>
+                        <li>习</li>
+                    </ul>
+                    <ul>
+                        <li>天</li>
+                        <li>天</li>
+                        <li>向</li>
+                        <li>上</li>
+                    </ul>
+                </div>
+                <div class="right">
+
+                </div>
+            </div>
+        </section>
+        <!-- 底部 -->
+        <footer>
+            <div>
+                <ul class="bottom">
+                    <li>欢</li>
+                    <li>迎</li>
+                    <li>光</li>
+                    <li>临</li>
+                </ul>
+                <div class="nextpage">下一页</div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
