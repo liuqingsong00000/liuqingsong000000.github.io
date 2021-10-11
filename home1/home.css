@@ -1,0 +1,106 @@
+header,
+section,
+body,
+p,
+h2,
+.section-right ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+header {
+    width: 100%;
+    background: #337ed1;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+header>div {
+    width: 80%;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-right {
+    width: 222px;
+    height: 88px;
+    background: url(image/github-button.png) no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-right>span {
+    margin-left: 65px;
+}
+
+.header-left h2 {
+    color: #ccc;
+}
+
+section>div {
+    width: 80%;
+    display: flex;
+}
+
+.section-left {
+    width: 80%;
+}
+
+.section-left>div {
+    overflow: hidden;
+    border-radius: 20px;
+    border: #ccc solid 1px;
+    margin: 10px;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+}
+
+.section-right {
+    width: 200px;
+    border-radius: 20px;
+    border: #ccc solid 1px;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.section-left ul,
+.section-left a {
+    margin-left: 30px;
+}
+
+.section-right li {
+    padding: 10px 0 10px 40px;
+}
+
+.section-right li:hover {
+    cursor: pointer;
+    background: #ccc;
+}
+
+.section-right h2 {
+    border-bottom: 1px solid white;
+}
+
+.section-right h2,
+.section-left h2 {
+    padding: 10px 0 10px 30px;
+    background: #ccc;
+}
