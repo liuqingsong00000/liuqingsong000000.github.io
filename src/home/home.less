@@ -1,0 +1,165 @@
+header,
+section,
+body,
+p,
+h3,
+ul,h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.warp {
+    min-width: 860px;
+}
+
+ul {
+    list-style: none;
+}
+
+header {
+    width: 100%;
+    background: #337ed1;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: #ccc;
+}
+
+header>div {
+    width: 80%;
+    height: 135px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-right {
+    width: 180px;
+    height: 60px;
+    background: url(image/github-button.png) no-repeat;
+    background-size: 180px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+.header-right>span,
+.header-right>p {
+    margin-left: 40px;
+}
+
+.header-left h1{
+    margin: 5px;
+}
+
+.header-left h3 {
+    color: #e0d5d5;
+}
+
+section>div {
+    width: 80%;
+    display: flex;
+}
+
+.section-left {
+    width: 80%;
+    border-right: 1px solid white;
+}
+
+.section-left>div {
+    overflow: hidden;
+    border-radius: 20px;
+    border: #ccc solid 1px;
+    margin: 10px 30px 10px 10px;
+    background: white;
+}
+
+.section-right {
+    width: 200px;
+    margin: 10px 10px 10px 30px;
+    position: relative;
+    // left: -1200px;
+    overflow: hidden;
+    height: 550px;
+}
+
+.section-left ul,
+.section-left span {
+    margin-left: 30px;
+}
+.section-left li{
+    text-indent: 1em;
+}
+
+.section-right h2 {
+    border-bottom: 1px solid white;
+    border-radius: 10px;
+    padding: 15px;
+    background: #337ed1;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.section-right a{
+    color: white;
+    text-decoration: none;
+}
+.section-left h3 {
+    padding: 10px 0 10px 30px;
+    background: #337ed1;
+    color: white;
+}
+
+.change {
+    animation: bian .2s linear forwards;
+}
+
+@keyframes bian {
+    100% {
+        transform: translate(1000px, 0);
+    }
+}
+
+.item {
+    position: relative;
+    // left: -1000px;
+}
+
+.donghua{
+    animation: bian1 .5s linear forwards;
+}
+
+@keyframes bian1 {
+    100% {
+        transform: translate(1200px, 0);
+    }
+}
+
+.donghua1{
+    animation: bian2 2s linear forwards;
+}
+
+@keyframes bian2 {
+    0%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.item>div{
+    text-indent: 2em;
+    margin: 10px 25px 25px 25px;
+}
+.section-right li:hover{
+    color: white;
+}
+

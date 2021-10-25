@@ -1,0 +1,142 @@
+body,
+header,
+section,
+footer,
+ul,
+p {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+header {
+  background: #fff9f3;
+}
+header > div {
+  display: flex;
+  justify-content: center;
+}
+header > div > div:nth-child(1),
+header > div > div img {
+  width: 100px;
+  height: 56px;
+}
+header > div > div:nth-child(1) {
+  margin-right: 100px;
+}
+header > div > div:nth-child(2) {
+  width: 1170px;
+  display: flex;
+  justify-content: space-between;
+}
+.header-left ul,
+.header-right ul {
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+}
+.header-left ul > li,
+.header-right ul > li {
+  line-height: 26px;
+}
+.header-left ul > li {
+  padding: 15px;
+}
+.header-left li:nth-child(4) img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+.header-left li:nth-child(4) div {
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #efe9e3;
+}
+.header-left li:nth-child(4) div input {
+  width: 135px;
+  height: 38px;
+  border: none;
+  text-indent: 1em;
+  background: #efe9e3;
+}
+.header-left li:nth-child(4) div label {
+  margin-top: 5px;
+  margin-right: 5px;
+}
+.header-left li:nth-child(4) {
+  padding: 0 15px;
+}
+.header-right li:nth-child(1),
+.header-right li:nth-child(2) {
+  margin: 15px 16px;
+}
+.header-right li:nth-child(3) {
+  width: 80px;
+  height: 38px;
+  text-align: center;
+  line-height: 38px;
+  border: 1px solid #eb7056;
+  border-radius: 20px;
+  color: #eb7056;
+}
+.header-right li:nth-child(4) {
+  color: white;
+  background: #eb7056;
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 20px;
+}
+.header-right li:nth-child(3),
+.header-right li:nth-child(4) {
+  margin: 8px 8px;
+}
+section {
+  background: #b3b1af;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  background: #f7f4f2;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+footer > div {
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+}
+footer img {
+  width: 22px;
+  height: 22px;
+}
+footer input {
+  width: 400px;
+  height: 35px;
+  background: #c0bdbb;
+  outline: none;
+  border: none;
+  border-radius: 25px;
+  margin: 10px 0;
+  text-indent: 1em;
+}
+footer > div > div {
+  display: flex;
+  align-items: center;
+}
+footer > div > div:nth-child(2),
+footer > div > div:nth-child(4),
+footer > div > div:nth-child(3) {
+  margin: 0 10px;
+}
+footer > div > div > span {
+  margin: 0 5px;
+}
+
